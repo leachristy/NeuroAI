@@ -20,21 +20,45 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"></a>
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/Logo.png" alt=""> CPPNEXGENWIRELESS
+            </a>
 
-            <div class="nav__menu" id="nav__menu">
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">About</a>
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <!-- DROPDOWN 1 -->
+                    <li class=" dropdown__item" id="dropdown__title">
+                        <div class="dropdown__header"> Projects <i class="ri-arrow-down-s-line dropdown__arrow"
+                                id="dropdown__arrow"></i></div>
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                            <li>
+                                <a href="5g__project.html" class="dropdown__link">5G Network Security</a>
+                            </li>
+                            <li>
+                                <a href="uav__project.html" class="dropdown__link">UAV & Drone Security</a>
+                            </li>
+                            <li>
+                                <a href="evtol__project.html" class="dropdown__link">e-VTOL Security</a>
+                            </li>
+                            <li>
+                                <a href="sdr__project.html" class="dropdown__link">SDR Security</a>
+                            </li>
+                            <li>
+                                <a href="satellite__project.html" class="dropdown__link">Satellite Network Security</a>
+                            </li>
+                            <li>
+                                <a href="edge__project.html" class="dropdown__link">Edge Network Security</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Projects</a>
+                        <a href="sponsors.html" class="nav__link">Sponsors</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Sponsors</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Contact</a>
+                        <a href="contact.html" class="nav__link">Contact</a>
                     </li>
                 </ul>
 
@@ -50,7 +74,168 @@
             </div>
         </nav>
     </header>
+    <!--=============== MAIN ===============-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Securing the <br>
+                    Next Generation <br>
+                    of Wireless Technology
+                </h1>
+                <p class="home__description">
+                    Discover how our secure solutions
+                    are shaping the future of next-generation
+                    wireless technology.
+                </p>
 
+                <a href="#projects" class="button">View Projects</a>
+
+            </div>
+            <img src="assets/images/HeroImage.png" alt="img" class="home__img">
+        </div>
+    </section>
+
+    <!--=============== About ===============-->
+    <div class="spacer layer1"></div>
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <img src="/assets/images/Picture1.png" alt="" class="about__image">
+            <div class="about__data">
+                <h2 class="section__title about__title">
+                    Innovation <br> Meets Security
+                </h2>
+                <p class="about__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <a href="about.html" class="button">Learn More</a>
+
+
+            </div>
+
+        </div>
+    </section>
+    <div class="spacer layer2"></div>
+
+    <!--=============== Projects ===============-->
+    <section class="projects section" id="projects">
+        <h2 class="section__title">
+            Projects We've Worked On
+        </h2>
+
+        <div class="projects__container container grid">
+            <article class="project__card">
+                <div class="project__bg"></div>
+                <img class="project__img" src="assets/images/5G.jpg" alt="project__img">
+                <h3 class="project__title"><a href="uav__project.html">5G Network <br> Security</a></h3>
+                <span class="project__subtitle"></span>
+            </article>
+
+            <article class="project__card">
+                <div class="project__bg"></div>
+                <img class="project__img" src="assets/images/Drone Security.jpeg" alt="project__img">
+                <h3 class="project__title"></h3>
+                <h3 class="project__title"><a href="uav__project.html">UAV & Drone <br> Security</a></h3>
+                <span class="project__subtitle"></span>
+            </article>
+
+            <article class="project__card">
+                <div class="project__bg"></div>
+                <img class="project__img" src="assets/images/evtol.jpg" alt="project__img">
+                <h3 class="project__title"><a href="evtol__project.html">e-VTOL <br>Security</a></h3>
+                <span class="project__subtitle"></span>
+            </article>
+
+            <article class="project__card">
+                <div class="project__bg"></div>
+                <img class="project__img" src="assets/images/SDR.JPG" alt="project__img">
+                <h3 class="project__title"><a href="sdr__project.html">SDR <br>Security</a></h3>
+                <span class="project__subtitle"></span>
+            </article>
+
+            <article class="project__card">
+                <div class="project__bg"></div>
+                <img class="project__img" src="assets/images/satellite.jpg" alt="project__img">
+                <h3 class="project__title"><a href="satellite__project.html">Satellite Network <br> Security</a></h3>
+                <span class="project__subtitle"></span>
+            </article>
+
+            <article class="project__card">
+                <div class="project__bg"></div>
+                <img class="project__img" src="assets/images/edge.png" alt="project__img">
+                <h3 class="project__title"><a href="edge__project.html">Edge Network <br>Security</a></h3>
+                <span class="project__subtitle"></span>
+            </article>
+        </div>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="assets/images/Logo.png" alt=""> CPPNEXGENWIRELESS
+                </a>
+                <p class="footer__description">
+                    Securing the <br>
+                    Next Generation <br>
+                    of Wireless Technology
+                </p>
+            </div>
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">Pages</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer__link">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div>
+                    <h3 class="footer__title">Projects</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="5g__project.html" class="footer__link">5G Network Security</a>
+                        </li>
+                        <li>
+                            <a href="uav__project.html" class="footer__link">UAV & Drone Security</a>
+                        </li>
+                        <li>
+                            <a href="evtol__project.html" class="footer__link">e-VTOL Security</a>
+                        </li>
+                        <li>
+                            <a href="sdr__project.html" class="footer__link">SDR Security</a>
+                        </li>
+                        <li>
+                            <a href="satellite__project.html" class="footer__link">Satellite Network Security</a>
+                        </li>
+                        <li>
+                            <a href="edge__project.html" class="footer__link">Edge Network Security</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <span class="footer__copy"></span>
+        </div>
+        <span class="footer__copy">
+            &#169; 2023 Copyright CPPNEXGENWIRELESS
+        </span>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
