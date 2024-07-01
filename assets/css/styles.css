@@ -178,11 +178,20 @@ img {
   color: #505050;
 }
 
+.tab_content {
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.175);
+  border-radius: 0.75rem;
+  align-items: center;
+}
+
 .tab__content {
   margin: 2rem;
   padding: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.175);
   border-radius: 0.75rem;
+  align-items: center;
 }
 
 .tab__content > div {
@@ -446,9 +455,10 @@ input#tab3:checked ~ nav li.tab3 span {
 .layer2 {
   background-image: url("../svg/waves-bottom.svg");
 }
-/*==========Projects ==========*/
+/*==========projects ==========*/
 .projects__container {
   padding-top: 2rem;
+  padding-bottom: 100px;
   grid-template-columns: 400px;
   justify-content: center;
   row-gap: 2.5rem;
@@ -493,6 +503,35 @@ input#tab3:checked ~ nav li.tab3 span {
 
 .project__subtitle {
   font-size: var(--small-font-size);
+}
+
+.rounded_image {
+  border-radius: 25px; 
+}
+
+.proj_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.proj_img {
+  width:3000px;
+  margin:40px;
+  filter: drop-shadow(0 0 0.75rem #00308F);
+}
+
+.proj_desc {
+  margin:40px;
+  border: 1px solid #F0F0F0; 
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+.outer {
+  display: flex;
+  flex-direction: row;
 }
 
 /*========== FOOTER ==========*/
@@ -554,6 +593,60 @@ input#tab3:checked ~ nav li.tab3 span {
   color: var(--text-color-light);
 }
 
+
+/*========== PROJECTS ==========*/
+
+/* Project pages for various devices */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .proj_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj_img {
+    width:300px;
+    margin:30px;
+    filter: drop-shadow(0 0 0.5rem #00308F);
+  }
+
+  .proj_desc {
+    margin: 10px;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .proj_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj_img {
+    width:300px;
+    margin:30px;
+    filter: drop-shadow(0 0 0.5rem #00308F);
+  }
+
+  .proj_desc {
+    margin: 10px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .proj_info {
+    display: flex;
+    flex-direction: row;
+  }
+  .proj_img {
+    width:3000px;
+    margin:40px;
+    filter: drop-shadow(0 0 0.75rem #00308F);
+  }
+} 
+
 /*========== FOOTER ==========*/
 
 /* For small devices */
@@ -592,6 +685,7 @@ input#tab3:checked ~ nav li.tab3 span {
     grid-template-columns: max-content;
     gap: 2rem;
   }
+
 }
 
 /* For Medium devices */
