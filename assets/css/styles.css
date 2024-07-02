@@ -455,6 +455,43 @@ input#tab3:checked ~ nav li.tab3 span {
 .layer2 {
   background-image: url("../svg/waves-bottom.svg");
 }
+
+.proj_list {
+  display: flex; 
+  flex-direction: row;
+  
+}
+
+.proj_element {
+  border: 1px solid #0066ff; 
+  width: 200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.filler {
+  border: 1px solid #0066ff; 
+  width: 200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.proj_element:hover {
+  background-color: #0066ff;
+  color: white;
+}
+
 /*==========projects ==========*/
 .projects__container {
   padding-top: 2rem;
@@ -614,6 +651,12 @@ input#tab3:checked ~ nav li.tab3 span {
   .proj_desc {
     margin: 10px;
   }
+  .proj_list {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+  }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -632,6 +675,12 @@ input#tab3:checked ~ nav li.tab3 span {
   .proj_desc {
     margin: 10px;
   }
+  .proj_list {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+  }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -644,6 +693,11 @@ input#tab3:checked ~ nav li.tab3 span {
     width:3000px;
     margin:40px;
     filter: drop-shadow(0 0 0.75rem #00308F);
+  }
+  .proj_list {
+    display: flex; 
+    flex-direction: row;
+    
   }
 } 
 
