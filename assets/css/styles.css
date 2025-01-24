@@ -5,8 +5,9 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: #0066ff;
-  --first-color-alt: #00a9ff;
+  --first-color: #7469B6;
+  --first-color-alt: #AD88C6;
+  --img-color: #504099;
   --title-color: hsl(140, 4%, 12%);
   --text-color: hsl(140, 4%, 40%);
   --text-color-light: hsl(140, 4%, 64%);
@@ -401,7 +402,7 @@ input#tab3:checked ~ nav li.tab3 span {
 .home__img {
   width: 350px;
   justify-self: center;
-  filter: var(--shadow-img);
+  
 }
 
 /*========== Button  ==========*/
@@ -463,7 +464,7 @@ input#tab3:checked ~ nav li.tab3 span {
 }
 
 .proj_element {
-  border: 1px solid #0066ff; 
+  border: 1px solid #7469B6; 
   width: 200px; 
   margin-left: auto; 
   margin-right: auto; 
@@ -488,7 +489,7 @@ input#tab3:checked ~ nav li.tab3 span {
 }
 
 .proj_element:hover {
-  background-color: #0066ff;
+  background-color: #7469B6;
   color: white;
 }
 
@@ -554,7 +555,7 @@ input#tab3:checked ~ nav li.tab3 span {
 .proj_img {
   width:3000px;
   margin:40px;
-  filter: drop-shadow(0 0 0.75rem #00308F);
+  filter: drop-shadow(0 0 0.75rem var(--img-color));
 }
 
 .proj_desc {
@@ -645,7 +646,7 @@ input#tab3:checked ~ nav li.tab3 span {
   .proj_img {
     width:300px;
     margin:30px;
-    filter: drop-shadow(0 0 0.5rem #00308F);
+    filter: drop-shadow(0 0 0.5rem var(--img-color));
   }
 
   .proj_desc {
@@ -669,7 +670,7 @@ input#tab3:checked ~ nav li.tab3 span {
   .proj_img {
     width:300px;
     margin:30px;
-    filter: drop-shadow(0 0 0.5rem #00308F);
+    filter: drop-shadow(0 0 0.5rem var(--img-color));
   }
 
   .proj_desc {
@@ -692,7 +693,7 @@ input#tab3:checked ~ nav li.tab3 span {
   .proj_img {
     width:3000px;
     margin:40px;
-    filter: drop-shadow(0 0 0.75rem #00308F);
+    filter: drop-shadow(0 0 0.75rem var(--img-color));
   }
   .proj_list {
     display: flex; 
