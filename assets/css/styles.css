@@ -179,6 +179,13 @@ img {
   color: #505050;
 }
 
+.tab_title {
+  text-align: center;
+  color: black;
+  font-size: x-large;
+  font-family: var(--second-font);
+}
+
 .tab_content {
   margin: 2rem;
   padding: 2rem;
@@ -567,9 +574,27 @@ input#tab3:checked ~ nav li.tab3 span {
   text-align: center;
 }
 
+.proj_research {
+  margin:40px;
+  border: 1px solid #F0F0F0; 
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  filter: drop-shadow(0 0 0.75rem #A9A9A9);
+  font-size: medium;
+  color: black;
+}
+
 .outer {
   display: flex;
   flex-direction: row;
+}
+
+/*========== SPONSORS ==========*/
+.pub_list {
+  list-style-type: disc;
+  text-align: center;
+  font-size: medium;
 }
 
 /*========== FOOTER ==========*/
