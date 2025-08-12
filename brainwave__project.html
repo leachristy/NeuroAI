@@ -42,8 +42,7 @@
                                 <a href="VR__project.html" class="dropdown__link">Meta VR/AR Security Analytics</a>
                             </li>
                             <li>
-                                <a href="phishing__project.html" class="dropdown__link">Approach to Address Spear
-                                    Phishing Attack</a>
+                                <a href="phishing__project.html" class="dropdown__link">ML for Psychology based Phishing Detection</a>
                             </li>
                         </ul>
                     </li>
@@ -122,7 +121,8 @@
                     </div>
                     <div class="proj_info">
                         <div class="proj_img">
-                            <img src="assets/images/Headset 2.png" alt="project__img" class="rounded_image" style="width: fit-content;">
+                            <img src="assets/images/Headset 2.png" alt="project__img" class="rounded_image"
+                                style="width: fit-content;">
                         </div>
                     </div>
                     <div class="proj_info">
@@ -188,7 +188,100 @@
                 </div>
                 <div class="tab2">
                     <h3 class="tab_title">Explore the Research</h3>
-                    <p style="text-align: center;"> </br>Information coming soon...</p>
+                    <div class="proj_research">
+                        <p>
+                            <b>Investigating Data Protection Mechanisms for EEG Biometric Authentication</b> </br>
+                            <i>A Research Study on Privacy-Preserving EEG Biometric Authentication Techniques</i> </br>
+                            EEG data is an intriguing new biometric authentication medium. However, users may not be
+                            comfortable with the idea of presenting data about their intimate brain state without
+                            protections in place. Furthermore, EEG data used for authentication should be considered
+                            sensitive, as its leakage could also assist an attacker in exploiting the user in the
+                            future. This paper investigates four potential approaches to performing authentication of
+                            users with EEG data, without using the raw unprotected EEG signals. The strategies tested
+                            were: homomorphic encryption, BioHashing, fuzzy hashing, and Bloom filter templates. These
+                            strategies were compared against a baseline model using the standard False Acceptance Rate
+                            (FAR), False Rejection Rate (FRR), and Half Total Error Rate (HTER) metrics. HTER was a
+                            particular focus, as a representation of a balance between FAR and FRR. Testing found that
+                            homomorphic encryption came with significant execution time overhead but performed closest
+                            to baseline with an HTER of 0.005. BioHashing exhibited an HTER of 0 or near 0 when the
+                            authentication threshold was equally low (e.g., 0.3 or less). Fuzzy hashing consistently
+                            reported an HTER between 0.1 and 0.15. Finally, the Bloom filter template approach varied,
+                            but hovered close to 0.1 HTER. Fuzzy hashing is designed to accommodate variation in data,
+                            which explains its capability when applied to biometric data. Additionally, the combination
+                            of normalization with the probabilistic nature of Bloom filter data structures appear to
+                            similarly enable their application to this problem. This testing helped to show that
+                            authentication with protection mechanisms is possible and could potentially be reliable.
+                            Additionally, these tests demonstrated the novel application of fuzzy hashing and Bloom
+                            filter templates to EEG-based biometric authentication.
+                        </p>
+                    </div>
+                    <div class="proj_research">
+                        <p>
+                            <b>EEG Signal-Based Authentication: A Performance Evaluation of Feature Extraction and
+                                Classification Techniques</b> </br>
+                            <i>A Research Study on EEG-Based Single-Step Authentication as an Alternative to Two-Factor
+                                Authentication</i> </br>
+                            In the modern digital era, passwords remain a common yet vulnerable means of user
+                            authentication, making them susceptible to many attacks. As a result, Two-Factor
+                            Authentication (2FA) emerged, offering heightened security. However, its two-step
+                            verification process can discourage widespread adoption. This study explores the potential
+                            of Electroencephalography (EEG) signals as an innovative alternative to 2FA by combining the
+                            authentication and validation processes into a single step. Our research examines different
+                            techniques to extract features from raw EEG signals, including band power extraction,
+                            statistical features, wavelet features, and Shannon Entropy, to capture these signals’
+                            unique and intricate patterns. Additionally, we perform a comprehensive comparative analysis
+                            of discriminative classifiers such as Support Vector Machines (SVMs), k-Nearest Neighbors
+                            (k-NNs), Multilayer Perceptron’s (MLPs), Random Forest, and Gradient Boosting to determine
+                            the most effective approach for EEG signal-based authentication. We utilize a user-friendly
+                            web application that connects with cloud resources to validate our findings and provide a
+                            tangible demonstration. This application securely receives and stores EEG signals, allowing
+                            them to be evaluated against pre-trained machine-learning models. Our findings highlight the
+                            significant potential of EEG signals as a dependable, robust, and secure approach for user
+                            authentication, paving the way toward a future where passwords and complex 2FA processes can
+                            be substituted with a more convenient and reliable EEG-based authentication system.
+                        </p>
+                    </div>
+                    <div class="proj_research">
+                        <p>
+                            <b>An Approach to Developing EEG-Based Person Authentication System</b>
+                            <i>A Research Study on EEG-Based Authentication Using Neurophysiological Responses to
+                                Music</i>
+                            The need for a new authentication method such as biometrics becomes apparent as the data
+                            breaches on password-based authentication increase. However, current biometric forms of
+                            authentication become unusable once compromised. Additional limits are realized when an
+                            attacker coerces an authorized user into a forced authentication. To resolve both issues, we
+                            propose creating an authentication mechanism that depends on the user's neurophysiological
+                            responses to chosen pieces of music (non-lyrical) measured using electroencephalographic
+                            (EEG) signals. This research paper provides a guide for creating and presenting a system
+                            that incorporates such idea for person classification and authentication. In a group study,
+                            the aim is that participant listen to individually selected music and music selected by
+                            other participants during an EEG reading. The change in the Alpha and Beta band frequencies
+                            across eight electrode EEG sensors serves as the input feature vector for a supervised
+                            machine learning algorithm that trains on the user and attacker EEG readings. Ultimately,
+                            the goal of the algorithm is to create a user-specific model to uniquely identify the
+                            respective user based on the corresponding EEG response to music and grant authentication.
+                            Our study lays a solid foundation for creating a promising EEG-based authentication system
+                            by solving the drawbacks of current biometric authentication methods.
+                        </p>
+                    </div>
+                    <div class="proj_research">
+                        <p>
+                            <b>Design and Development of a Mobile EEG Data Analytics Framework</b>
+                            <i>A Research Study on EEG Workbench: An Android Framework for EEG Data Analytics and
+                                Authentication</i>
+                            In this paper, we discuss the design and development of EEG Workbench: a prototyping
+                            framework for building electroencephalography (EEG) data analytics framework for the Android
+                            platform. EEG data describe the activity of neuron populations in the brain and are acquired
+                            via electrodes placed on specific positions in the skull. EEG signals have been shown to be
+                            sufficiently different between individuals and therefore suitable for use in the
+                            authentication process. The relatively recent introduction of consumer-grade EEG acquisition
+                            devices has made the utilization of EEG research more accessible to ubiquitous computing
+                            devices such as smartphones; however, the software developed in EEG research lacks specific
+                            implementations for Android. EEG Workbench aims to provide developers with a tool to build
+                            electroencephalography (EEG) data analytics framework for the Android platform.
+                        </p>
+                    </div>
+
                 </div>
             </div>
 
@@ -243,8 +336,7 @@
                             <a href="VR__project.html" class="footer__link">Meta VR/AR Security Analytics</a>
                         </li>
                         <li>
-                            <a href="phishing__project.html" class="footer__link">Approach to Address Spear Phishing
-                                Attack</a>
+                            <a href="phishing__project.html" class="footer__link">ML for Psychology based Phishing Detection</a>
                         </li>
                     </ul>
 
