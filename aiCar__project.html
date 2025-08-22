@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroAI | Projects</title>
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo 2.png" alt=""> CPPNEUROAI
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <!-- DROPDOWN 1 -->
+                    <li class=" dropdown__item" id="dropdown__title">
+                        <div class="dropdown__header"> Projects <i class="ri-arrow-down-s-line dropdown__arrow"
+                                id="dropdown__arrow"></i></div>
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                            <li>
+                                <a href="brainwave__project.html" class="dropdown__link">Brainwave Machine Learning</a>
+                            </li>
+                            <li>
+                                <a href="physiology__project.html" class="dropdown__link">ML for Physiology</a>
+                            </li>
+                            <li>
+                                <a href="phishing__project.html" class="dropdown__link">ML for Psychology based Phishing
+                                    Detection</a>
+                            </li>
+                            <li>
+                                <a href="VR__project.html" class="dropdown__link">VR/AR Security Analytics</a>
+                            </li>
+                            <li>
+                                <a href="aiCar__project.html" class="dropdown__link">UGV and Self Driving Car AI
+                                    Security</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="publications.html" class="nav__link">Publications</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sponsors.html" class="nav__link">Sponsors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+
+    <section class="section">
+        <h1 class="section__title">UGV and Self Driving</br>Car AI Security</h1>
+        <div class="tabbed">
+            <input type="radio" name="content" id="tab1" checked>
+            <input type="radio" name="content" id="tab2">
+            <input type="radio" name="content" id="tab3">
+            <nav>
+                <ul>
+                    <li class="tab1"><label for="tab1"><span>Project Overview</span></label></li>
+                    <li class="tab2"><label for="tab2"><span>Explore the Research</span></label></li>
+                </ul>
+            </nav>
+            <div class="tab__content">
+                <div class="tab1">
+                    <h3 class="tab_title">Project Overview</h3>
+                    <div class="proj_info">
+                        <div class="proj_desc">
+                            <p>
+                                The autonomous movement of vehicles is a task that requires a careful analysis of the
+                                environment. Due to the
+                                advancement of such systems and their continuous development, it is possible that they
+                                will
+                                soon allow the
+                                achievement of higher levels of driving automation, ultimately leading to the mass
+                                production of fully
+                                autonomous vehicles.
+                            </p>
+                        </div>
+                        <div class="proj_img">
+                            <img src="assets/images/AI Car image 1.png" alt="project__img" class="rounded_image">
+                        </div>
+                    </div>
+                    <div class="proj_info">
+                        <div class="proj_img">
+                            <img src="assets/images/AI Car image 4.jpg" alt="project__img" class="rounded_image">
+                        </div>
+                        <div class="proj_desc">
+                            <p>
+                                At PolySec lab we are looking into the security vulnerabilities of Jetson Nano Cars if
+                                someone can fool the AI
+                                by supplying wrong images.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proj_info">
+                        <div class="proj_img">
+                            <img src="assets/images/AI Car image 2.png" alt="project__img" class="rounded_image">
+                        </div>
+                        <div class="proj_img">
+                            <img src="assets/images/AI Car image 3.png" alt="project__img" class="rounded_image">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab2">
+                    <h3 class="tab_title">Explore the Research</h3>
+                    <div class="proj_research">
+                        <p>
+                            <b>Experimental Evaluation of Security Attacks on Self-Driving Car Platforms</b> </br>
+                            <i>A Research Study Using NVIDIA Jetson & Yahboom Autonomous Vehicles</i> </br>
+                            Abstract: Autonomous vehicle systems present critical attack surfaces at both the perception
+                            and communication layers. This study moves beyond theoretical simulation to provide a
+                            comprehensive experimental evaluation of on-device attacks, quantifying their distinct
+                            operational impacts on real-world driving platforms. We implement a suite of adversarial
+                            (FGSM, PGD), Man-in-the-Middle (MitM), and Denial-of-Service (DoS) attacks on a ResNet-18
+                            based control system deployed on JetRacer and Yahboom vehicles. Using a set of specialized
+                            metrics, we establish a novel framework for identifying the unique "fingerprint" of each
+                            attack class.
+
+                            Our results reveal that attacks manifest in dramatically different ways. We found that
+                            Projected Gradient Descent (PGD) attacks pose a dual threat, causing severe steering
+                            deviation (0.42) while also acting as a resource-exhaustion attack that increases processing
+                            time by over 3,300%. In contrast, the most effective attack for pure control hijacking was
+                            a MitM assault on the model's output, which achieved the highest steering deviation (0.76)
+                            with negligible performance cost. DoS attacks showed a third distinct fingerprint, having
+                            minimal impact on steering but crippling the vehicle's responsiveness with a nearly 90%
+                            drop in frames per second (FPS). These findings demonstrate that a one-size-fits-all
+                            security approach is insufficient. The study highlights the urgent need for multi-modal
+                            defense systems capable of detecting anomalies across vehicle behavior, system performance,
+                            and network traffic to secure autonomous platforms against diverse threat vectors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer" style="background-color: #F8F8F8;">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="assets/images/logo 2.png" alt=""> CPPNEUROAI
+                </a>
+                <p class="footer__description">
+                    Empowering Minds <br>
+                    with Advanced <br>
+                    Neural Intelligence
+                </p>
+            </div>
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">Pages</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="publications.html" class="footer__link">Publications</a>
+                        </li>
+                        <li>
+                            <a href="sponsors.html" class="footer__link">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer__link">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div>
+                    <h3 class="footer__title">Projects</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="brainwave__project.html" class="footer__link">Brainwave Machine Learning</a>
+                        </li>
+                        <li>
+                            <a href="physiology__project.html" class="footer__link">ML for Physiology</a>
+                        </li>
+                        <li>
+                            <a href="phishing__project.html" class="footer__link">ML for Psychology based Phishing
+                                Detection</a>
+                        </li>
+                        <li>
+                            <a href="VR__project.html" class="footer__link">VR/AR Security Analytics</a>
+                        </li>
+                        <li>
+                            <a href="aiCar__project.html" class="footer__link">UGV and Self Driving Car AI Security</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <span class="footer__copy"></span>
+        </div>
+        <span class="footer__copy">
+            &#169; 2023 Copyright CPPNUEROAI
+        </span>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
